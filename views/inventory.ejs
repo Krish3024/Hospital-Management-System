@@ -1,0 +1,31 @@
+<%- include('header') %>
+<body>
+<%- include('navbar') %>
+
+<div class="container">
+    <h1 class="mt-5 mb-4">Inventory</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Item Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% items.forEach(function(item) { %>
+                <tr>
+                    <td><%= item.name %></td>
+                    <td>$<%= item.price %></td>
+                    <td><%= item.quantity %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</div>
+
+<div style="text-align: center;" class="my-5">
+    <a href="/addInventory">Add Items to Inventory</a>
+</div>
+
+<%- include('footer') %>

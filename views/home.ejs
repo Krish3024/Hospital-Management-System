@@ -1,0 +1,45 @@
+<%- include('header') %>
+<body style="overflow-y: hidden;">
+<%- include('navbar') %>
+<div class="container">
+    <div class="row">
+        <div class="col col-sm-6">
+            <div class="col col-sm-10" style="margin-top: 20%; margin-left: 10%;">
+                <h2>Welcome to HMS</h2>
+                <hr>
+                <p>
+                    We are dedicated to the responsible disposal and recycling of solar panel components. Our
+                    mission is
+                    to provide a sustainable solution for end-of-life solar panels while promoting environmental
+                    stewardship
+                    and rewarding users for their contribution to recycling efforts.
+                </p>
+                <div class="call-to-action my-3" style="margin-top: 10%;">
+                    <a class="btn btn-primary btn-md mx-3" href="/about" role="button">Get Started</a>
+                    <a class="btn btn-outline-primary btn-md" href="/appointment" role="button">Appointment</a>
+                </div>
+                <div class="call-to-action">
+                    <a class="btn btn-outline-primary btn-md mx-3" href="/doctors" role="button">Our Staff</a>
+                    <a class="btn btn-outline-primary btn-md" href="/contact" role="button">Contact us</a>
+                </div>
+            </div>
+        </div>
+        <div class="col col-sm-6 my-5">
+            <div class="col col-sm-6" style="display: flex;">
+                <img src="hospital.jpg" style="width: 7cm; height: 7cm; border-radius: 50%;">
+                <img src="doctor.jpg" style="width: 7cm; height: 7cm; border-radius: 50%; margin-left: 50%;">
+            </div>
+            <div class="col col-sm-6">
+                <img src="nurse.jpg" style="width: 7cm; height: 7cm; border-radius: 50%; margin-left: 70%;">
+            </div>
+        </div>
+    </div>
+    <div class="row" style="height: 10cm; width:15cm;;">
+
+        <canvas id="myChart" width="400" height="300"></canvas>
+    </div>
+</div>
+
+<%- include('footer') %>
+
+

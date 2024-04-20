@@ -1,0 +1,32 @@
+<%- include('header') %>
+<body>
+<%- include('navbar') %>
+
+
+<div class="container">
+    <h1 class="mt-5 mb-4">Doctors</h1>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Age</th>
+                <th scope="col">Specialization</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% doctors.forEach(function(doctor) { %>
+                <tr>
+                    <td><%= doctor.name %></td>
+                    <td><%= doctor.age %></td>
+                    <td><%= doctor.specialization %></td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</div>
+
+<div style="text-align: center;" class="my-5">
+    <a href="/addDoctor">Add Doctors to Database</a>
+</div>
+
+<%- include('footer') %>

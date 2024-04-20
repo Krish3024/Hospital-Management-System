@@ -1,0 +1,25 @@
+<%- include('header') %>
+<body>
+<%- include('navbar') %>
+
+
+<div class="container">
+    <h1 class="mt-5 mb-4">Add Doctor</h1>
+    <form action="/addDoctor" method="post">
+        <div class="form-group">
+            <label for="name">Doctor Name:</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" class="form-control" id="age" name="age" required>
+        </div>
+        <div class="form-group">
+            <label for="specialization">Specialization:</label>
+            <input type="text" class="form-control" id="specialization" name="specialization" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Add Doctor</button>
+    </form>
+</div>
+
+<%- include('footer') %>

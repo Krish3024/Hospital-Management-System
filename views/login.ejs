@@ -1,0 +1,28 @@
+<%- include('header') %>
+<body>
+    <div class="container mt-5">
+        <div class="row" style="display: flex; justify-content: center; text-align: center; margin-top: 4cm;">
+            <div class="col-sm-6" style="height: 100vh;">
+                <h1>Login Page</h1>
+                <div class="card">
+                    <div class="card-body">
+
+                        <form action="/login" method="POST">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" name="username">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" name="password">
+                            </div>
+                            <button type="submit" class="btn btn-primary my-3">Login</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('footer') %>
